@@ -25,7 +25,7 @@ Client.on('guildMemberAdd', member => {
 })
 
 Client.on('guildMemberRemove', member => {
-   let embed2 = new Discord.MessageEmbed()
+   let embed = new Discord.MessageEmbed()
            .setFooter(`Nous sommes désormais ${member.guild.memberCount} membres 😁 `)
            .setAuthor(`${member.user.username} nous quitte...`, member.user.displayAvatarURL())
            .setDescription("On espère tous te revoir ici, un jour...")
